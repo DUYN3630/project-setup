@@ -15,13 +15,35 @@ appsettings.Development.json
 appsettings.Local.json
 
 # ========================
-# Node.js / React / Vite
+# Node.js / React / Vite / Frameworks
 # ========================
 node_modules/
+jspm_packages/
+web_modules/
 dist/
+out/
 build/
 .vite/
+.next/
+.nuxt/
+.svelte-kit/
+.cache/
+.parcel-cache/
+.temp/
+.vuepress/dist/
+**/.vitepress/dist/
+**/.vitepress/cache/
+.docusaurus/
 *.local
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
 # ========================
 # Environment Variables
@@ -29,15 +51,21 @@ build/
 .env
 .env.local
 .env.*.local
+.env.*
+!.env.example
 
 # ========================
-# IDE
+# IDE / Editors
 # ========================
 .idea/
 .vscode/
+.vscode-test
 *.swp
 *.swo
 *~
+.project
+.classpath
+.settings/
 
 # ========================
 # OS
@@ -47,15 +75,44 @@ Thumbs.db
 desktop.ini
 
 # ========================
-# Logs
+# Logs & Runtime
 # ========================
 logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # ========================
-# Coverage / Test
+# Coverage / Test / Tools
 # ========================
 coverage/
 *.lcov
 TestResults/
+.nyc_output
+.grunt
+bower_components
+.lock-wscript
+lib-cov
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.tern-port
+
+# ========================
+# Yarn v3
+# ========================
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
